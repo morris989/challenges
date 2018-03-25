@@ -4,8 +4,8 @@ This repo contains misc Tools and scripts to solve challenges
 
 == Crypto
 
-. xor.py: Decypher Xor cyphered messages.
+* xor.py: Decypher Xor cyphered messages.
 
 == BruteForce
 
-.crackzip.py: Zip file dictionary attack.
+* crackzip.py: Zip file dictionary attack.

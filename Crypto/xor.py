@@ -21,22 +21,22 @@ def usage():
     print "-d    Base64 decode message."
 
 
-def main():
-    if len(sys.argv) == 3:
-        msg = sys.argv[1]
-        key = sys.argv[2]
+def main(argv):
+    if len(argv) == 3:
+        msg = argv[1]
+        key = argv[2]
         print decyph(msg, key)
-    elif len(sys.argv) == 4:
-        if sys.argv[1] != "-d":
-            print sys.argv[1]+" not an argument."
+    elif len(argv) == 4:
+        if argv[1] != "-d":
+            print argv[1]+" not an argument."
             usage()
             return 1
         try:
-            msg = b64decode(sys.argv[2])
+            msg = b64decode(argv[2])
         except Exception as e:
             print("Base64 not well formed %s", e)
             return 1
-        key = sys.argv[2]
+        key = argv[2]
         print decyph(msg, key)
     else:
         usage()
@@ -44,4 +44,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv)
