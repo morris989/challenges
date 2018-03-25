@@ -5,4 +5,4 @@ install:
   - pip install requests
   - pip install flake8
 script:
-  - flake8 cmdbox
+  - flake8 BruteForce
