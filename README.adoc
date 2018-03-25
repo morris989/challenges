@@ -1,7 +1,11 @@
-= challenges
+= Challenges
 
 This repo contains misc Tools and scripts to solve challenges
 
-== Crypto:
+== Crypto
 
 . xor.py: Decypher Xor cyphered messages.
+
+== BruteForce
+
+.crackzip.py: Zip file dictionary attack.
