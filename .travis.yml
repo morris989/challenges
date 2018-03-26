@@ -2,7 +2,7 @@ language: python
 python: "2.7"
 # command to install dependencies
 install:
-  - pip install requests
-  - pip install flake8
+  - pip install -r requirements.txt
 script:
   - flake8 BruteForce
+  - py.test --cov=Crypto tests.py
