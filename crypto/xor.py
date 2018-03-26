@@ -26,6 +26,7 @@ def main(argv):
         msg = argv[1]
         key = argv[2]
         print decyph(msg, key)
+        return 0
     elif len(argv) == 4:
         if argv[1] != "-d":
             print argv[1]+" not an argument."
@@ -38,9 +39,10 @@ def main(argv):
             return 1
         key = argv[2]
         print decyph(msg, key)
+        return 0
     else:
         usage()
-        return 0
+        return 1
 
 
 if __name__ == "__main__":
