@@ -1,5 +1,6 @@
 import pytest
 import crypto.xor
+import bruteforce.crackzip
 
 
 def test_crypto_xor_decode_ok():
@@ -12,3 +13,6 @@ def test_crypto_xor_decode_fail():
 
 def test_crypto_xor_main_ok():
     assert crypto.xor.main(["xor.py", "'-,'", "foo"]) == 0
+
+def test_bruteforce_crackzip_fail():
+    assert bruteforce.crackzip.main(["","","",""]) == 1
